@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mama-care
+    runtime: static
+    staticPublishPath: .
+    headers:
+      - path: /mama_care.apk
+        name: Content-Type
+        value: application/vnd.android.package-archive
+      - path: /mama_care.apk
+        name: Content-Disposition
+        value: attachment; filename="mama_care.apk"
